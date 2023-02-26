@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.title-home {
+    margin-top: 40px;
+}
+
+.welcome {
+    color: #51edf3;
+    font-size: 70px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: tada;
+
+    animation-duration: 2s;
+}
+
+.container-main {
+    width: 60%;
+    border: 5px;
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.267);
+    border-radius: 8px;
+}
+
+
+
+input {
+    margin-top: 20px;
+}
+
+.star-btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.sign-btn {
+    position: relative;
+    padding: 20px 50px;
+    background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    ;
+    border-radius: 40px;
+    box-shadow: 0 0 0 0 rgba(145, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.sign-btn::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background: #13ff13;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+.container-form img {
+    width: 100%;
+    padding-bottom: 15%;
+    padding-top: 0%;
+}
+
+.sign-btn:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(16, 226, 253, 0.5), -10px 10px 25px 0 rgba(183, 0, 255, 0.7);
+
+}
+
+
+
+.sign-btn:hover::after {
+    transform: rotate(150deg);
+}
+
+/* class message // title-home
+class create a count // crea tu nickname
