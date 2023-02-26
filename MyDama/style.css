@@ -199,7 +199,7 @@ button:hover {
     border-bottom-left-radius: 8px; */
     max-width: 1000px;
     width: 100%;
-    padding: 0 20px;
+    justify-content: center;
     box-sizing: border-box;
 }
 
@@ -229,13 +229,32 @@ button:hover {
     box-sizing: border-box;
 }
 
-h2:first-of-type {
-    margin-right: auto;
+h2 {
+    margin-right: 7px;
+    margin-left: 7px;
 }
 
-h2:last-of-type {
-    margin-left: auto;
+.reload {
+    size: 10px;
+    height: 45px;
+    width: 55px;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+    margin-top: 20px;
 }
+
+.reload img {
+    width: 100%;
+}
+
+/* h2:first-of-type {
+    margin-right: auto;
+} */
+
+/* h2:last-of-type {
+    margin-left: auto;
+} */
 
 footer {
     text-align: center;
